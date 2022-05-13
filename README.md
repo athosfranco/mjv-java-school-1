@@ -114,6 +114,7 @@ Plano de aula, apresentações, exercícios aplicados na School de Java.
 * [Live sobre Java e o mercado](https://www.youtube.com/watch?v=98wpk6CV330)
 * [Dicionário do Programador](https://www.youtube.com/watch?v=sZAxLRMxEUo)
 * [Plataforma de Programação](https://exercism.org/)
+* [Banco de Dados](https://glysns.gitbook.io/banco-de-dados/)
 
 
 ###### Persistência
