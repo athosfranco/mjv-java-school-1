@@ -4,10 +4,10 @@
   <img src="https://www.mjvinnovation.com/wp-content/uploads/2020/12/mjv-icons-who-we-are-timeline-09-160x160.png" alt="mjv-estudo" width="120">
 <br>
 <br>
-MJV - ESTUDO
+MJV - SCHOOL
 </h1>
 
-<p align="center">Pasta de estudo do curso que participei da MJV</p>
+<p align="center">Pasta do curso da MJV</p>
 
 
 ## Features
