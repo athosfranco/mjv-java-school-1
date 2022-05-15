@@ -6,24 +6,28 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import com.mjv.projetofinal.model.Cliente;
+import com.mjv.projetofinal.model.cadastro.Cliente;
 import com.mjv.projetofinal.repository.ClienteRepository;
 
+@RestController
+@RequestMapping("/clientes") // toda vez que uma pessoa quiser algo de clientes terá uma funcionalidade de cliente
 public class ClienteController {
 
-	@Autowired
-	ClienteRepository clienteRepository;
+	@Autowired								//Vou conseguir usar o repositorio do cliente sem instanciar, usando todas as funcionalidades do método
+	private ClienteRepository clienteRepository;
 	
-	@PostMapping
-	public void gravar(@RequestBody Cliente cliente) {
+	@PostMapping 										// eu quero gravar na web eu uso um POST direcionada ao cliente, e já traz todos os métodos. 
+	public void gravar(@RequestBody Cliente cliente) {  // neste caso vou o usar o método save() passando só o cliente que será salvo
 		clienteRepository.save(cliente); 
 		
 	}
 	
-	@GetMapping
+	@GetMapping										// obtem os clientes que estão no banco de dados
 	public List<Cliente> listar(){
-		return clienteRepository.findAll();
+		return clienteRepository.findAll();			// o repositorio delega, ou informa os clientes 
 	}
 	
 }
