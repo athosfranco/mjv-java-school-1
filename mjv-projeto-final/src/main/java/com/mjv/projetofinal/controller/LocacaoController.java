@@ -33,8 +33,8 @@ public class LocacaoController {
 		return locacaoRepository.findAll(); 
 	}
 	
-	@DeleteMapping("{id}")
-	public void deletar(@PathVariable Integer id, @RequestBody Locacao locacao) {
-		locacaoRepository.delete(locacao);
-	}
+//	@DeleteMapping("{id}")
+//	public void deletar(@PathVariable Integer id, @RequestBody Locacao locacao) {
+//		locacaoRepository.delete(locacao);
+//	}
 }
