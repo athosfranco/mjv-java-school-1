@@ -40,4 +40,12 @@ public class Locacao {
 	@OneToMany(cascade = CascadeType.ALL)
 	@JoinColumn(name = "pedido_id")
 	private List<LocacaoItem> itens;
+	
+	public void setValorFinalSomado() {
+		int somaValorFinal;
+		for(int item: itens) {
+			somaValorFinal = item.subtotal + somaValoFinal;
+		}
+		return this.valorFinal = somaValorFinal;		
+	}
 }
